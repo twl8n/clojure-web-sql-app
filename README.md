@@ -7,6 +7,10 @@ This project uses Leiningen, which saves all kinds of headaches.
 
 [Leiningen for automating Clojure projects without setting your hair on fire](https://leiningen.org)
 
+You only need to create the database once. Every time you want to run the app, do the "lein run ..." as below.
+
+This demo server runs on port 8080 instead of the normal http port 80. 
+
 ```
 > cat schema.sql| sqlite3 expmgr.db
 > lein run < /dev/null > run.log 2>&1 &

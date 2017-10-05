@@ -15,15 +15,17 @@ This project uses Leiningen, which saves all kinds of headaches.
 2017-10-04 21:10:35.678:INFO:oejs.AbstractConnector:Started SelectChannelConnector@0.0.0.0:8080
 > jobs
 [1]  + running    lein run < /dev/null > run.log 2>&1
+# Just leave the job running in the backround to use the web app.
+# When you are done, use the kill command to kill the web app.
 > kill %1
 ```
 
-In your web browser go to:
+To see the web application in action, in your web browser go to:
 
 http://localhost:8080/app?action=list-all
 
-Clojure web apps are web servers and use ring. Ring is a jetty server. Apache httpd is not involved, so
-Clojure apps have a fairly different architecture than LAMP Perl or PHP web apps.
+Clojure web apps are web servers and use ring. Ring is jetty which is a standalone http server. Apache httpd
+is not involved, so Clojure apps have a fairly different architecture than LAMP Perl or PHP web apps.
 
 
 #### Errors
